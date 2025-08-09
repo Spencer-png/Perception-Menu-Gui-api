@@ -1,14 +1,11 @@
 # Installation
 
-## 1) Copy the library
-Place `imgui.lua` in your project. Ensure your host provides `render` and `input` globals compatible with PerceptionAPI.
-
-## 2) Load the module
+## 1) Load the module
 ```lua
 local imgui = require('imgui')
 ```
 
-## 3) Fonts
+## 2) Fonts
 The library creates a default font via:
 ```lua
 imgui.font = render.create_font('verdana.ttf', 15)
@@ -18,12 +15,12 @@ Adjust as needed:
 imgui.font = render.create_font('Smallest Pixel.ttf', 16)
 ```
 
-## 4) Environment prerequisites
+## 3) Environment prerequisites
 - `render`: draw_text, draw_rectangle, draw_circle, draw_triangle, draw_bitmap, measure_text, clip_start, clip_end
 - `input`: get_mouse_position, is_key_down, get_scroll_delta, get_clipboard, set_clipboard
 - Optional: `time.unix_ms()` or `winapi.get_tickcount64()` for caret blink
 
-## 5) First run
+## 4) First run
 Render at least one frame per tick:
 ```lua
 imgui.BeginFrame()
@@ -34,3 +31,4 @@ imgui.EndWindow()
 imgui.EndFrame()
 
 ``` 
+
