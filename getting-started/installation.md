@@ -5,9 +5,7 @@ Place `imgui.lua` in your project. Ensure your host provides `render` and `input
 
 ## 2) Load the module
 ```lua
-local imgui = dofile('imgui.lua')
--- or, if supported
--- local imgui = require('imgui')
+local imgui = require('imgui')
 ```
 
 ## 3) Fonts
@@ -34,4 +32,5 @@ if imgui.BeginWindow('hello', 'Hello', 100, 100, 300, 200) then
 end
 imgui.EndWindow()
 imgui.EndFrame()
+
 ``` 
